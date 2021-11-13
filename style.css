@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+.flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.btn-trans {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("/images/pattern-background-mobile.svg");
+  background-color: #e0e8ff;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  -webkit-box-shadow: 10px 40px 40px rgba(56, 41, 224, 0.1);
+          box-shadow: 10px 40px 40px rgba(56, 41, 224, 0.1);
+  max-width: 420px;
+  border-radius: 13px;
+}
+
+.card .hero-image {
+  border-radius: 13px 13px 0px 0px;
+}
+
+.card .card-body {
+  padding: 2rem 1.5rem;
+}
+
+.card .card-plan {
+  background-color: #f5f7ff;
+  border-radius: 7px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.card .card-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.card .card-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card .card-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #7280a7;
+  margin-bottom: 1.5rem;
+}
+
+.card .payment-btn {
+  background-color: #3829e0;
+  border-radius: 13px;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 10px 40px 40px rgba(56, 41, 224, 0.1);
+          box-shadow: 10px 40px 40px rgba(56, 41, 224, 0.1);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.card .payment-btn:hover {
+  background-color: #766cea;
+}
+
+.card .cancel-btn {
+  color: #7280a7;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.card .cancel-btn:hover {
+  color: #1f2f56;
+}
+
+.card .change-btn {
+  text-decoration: underline;
+  color: #3829e0;
+  font-weight: 700;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.card .change-btn:hover {
+  color: #766cea;
+  text-decoration: none;
+}
+
+.card .price {
+  color: #7280a7;
+}
+
+@media screen and (min-width: 568px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+}
+
+/* ### Primary
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+### Neutral
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+### Body Copy
+- Font size (paragraph): 16px */
+/*# sourceMappingURL=style.css.map */

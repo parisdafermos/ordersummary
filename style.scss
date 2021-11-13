@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+.flex-1 {
+  flex: 1;
+}
+.btn-trans {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+html,
+body {
+  min-height: 100vh;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("/images/pattern-background-mobile.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 10px 40px 40px rgba(hsl(245, 75%, 52%), 0.1);
+  max-width: 420px;
+  border-radius: 13px;
+  .hero-image {
+    border-radius: 13px 13px 0px 0px;
+  }
+  .card-body {
+    padding: 2rem 1.5rem;
+  }
+  .card-plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 7px;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .card-icon {
+    height: 50px;
+    width: 50px;
+  }
+  .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .card-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 1.5rem;
+  }
+  .payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 13px;
+    margin-bottom: 1rem;
+    box-shadow: 10px 40px 40px rgba(hsl(245, 75%, 52%), 0.1);
+
+    transition: all 0.2s ease-out;
+    &:hover {
+      background-color: lighten($color: hsl(245, 75%, 52%), $amount: 15);
+    }
+  }
+  .cancel-btn {
+    color: hsl(224, 23%, 55%);
+    transition: all 0.2s ease-out;
+    &:hover {
+      color: hsl(223, 47%, 23%);
+    }
+  }
+  .change-btn {
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    transition: all 0.2s ease-out;
+    &:hover {
+      color: lighten($color: hsl(245, 75%, 52%), $amount: 15);
+      text-decoration: none;
+    }
+  }
+  .price {
+    color: hsl(224, 23%, 55%);
+  }
+}
+@media screen and (min-width: 568px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+}
+/* ### Primary
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+### Neutral
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+### Body Copy
+- Font size (paragraph): 16px */
